@@ -9,7 +9,9 @@ from alert_config_app.models import *
 
 
 for x in Alert.objects.all():
-    print("\n--+",x)
-    for y in x.trigger_set.all():
-        print('  |-->',y)
+  print("\n--+",x)
+
+  for y in x.trigger_set.all():
+    print('  |-->',y)
+		
 
